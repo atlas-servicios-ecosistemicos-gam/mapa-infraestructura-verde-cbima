@@ -77,7 +77,7 @@ Row
 ### Datos: [Capa de infraestructura verde](https://raw.githubusercontent.com/atlas-servicios-ecosistemicos-gam/datos/master/infraestructura-verde/cbima/IV_CBI_RIO_MARIA_AGUILAR.TIF)
 ```{r}
 leaflet() %>%
-  setView(-84.1, (9.907672 + 9.94576)/2, 13) %>%
+  setView(-84.0, (9.907672 + 9.94576)/2, 13) %>%
   addProviderTiles(providers$OpenStreetMap.Mapnik, group = "OpenStreetMap") %>%
   addProviderTiles(providers$Stamen.TonerLite, group = "Stamen Toner Lite") %>%
   addProviderTiles(providers$CartoDB.DarkMatter, group = "CartoDB Dark Matter") %>%
