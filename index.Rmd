@@ -38,7 +38,7 @@ sf_limite_cbima_web <-
 # Capa raster de uso de la tierra (en Web Mercator)
 raster_infraestructura_verde <-
   raster(url_raster_infraestructura_verde) %>%
-  aggregate(fact=c(2), fun=modal) %>%
+  aggregate(fact=c(2), fun=modal) %>% # ¡¡HAY QUE TRATAR DE ELIMINAR ESTA AGRUPACIÓN. PODRÍA FUNCIONAR AL USAR MÁS MEMORIA LINUX!!
   crop(sf_limite_cbima_web) %>%
   mask(sf_limite_cbima_web)
 
@@ -98,7 +98,7 @@ leaflet() %>%
   ) %>%
   addLegend(
     title = "Infraestructura verde", 
-    position = "bottomleft",
+    position = "bottomright",
     colors = colores_uso_tierra, 
     labels = etiquetas_uso_tierra,
     group = "Infraestructura verde"
@@ -110,7 +110,7 @@ leaflet() %>%
   ) %>%  
   addMiniMap(
     toggleDisplay = TRUE,
-    position = "bottomright",
+    position = "bottomleft",
     tiles = providers$OpenStreetMap.Mapnik
   ) %>%
   addScaleBar(
