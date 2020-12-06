@@ -80,7 +80,7 @@ pal <- colorFactor(
 Row
 -----------------------------------------------------------------------
 
-### Datos: [Capa de infraestructura verde](https://raw.githubusercontent.com/atlas-servicios-ecosistemicos-gam/datos/master/infraestructura-verde/cbima/IV_CBI_RIO_MARIA_AGUILAR.TIF)
+### Datos para descarga: [Capa de infraestructura verde en el CBIMA](https://raw.githubusercontent.com/atlas-servicios-ecosistemicos-gam/datos/master/infraestructura-verde/cbima/IV_CBI_RIO_MARIA_AGUILAR.TIF)
 ```{r}
 
 leaflet() %>%
