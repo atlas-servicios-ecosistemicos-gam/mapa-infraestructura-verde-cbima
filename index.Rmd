@@ -1,5 +1,5 @@
 ---
-title: "Mapa de infraestructura verde en el CBIMA"
+title: "Mapa de infraestructura verde del Corredor Biológico Interurbano María Aguilar"
 output: 
   flexdashboard::flex_dashboard:
     orientation: rows
@@ -80,7 +80,7 @@ pal <- colorFactor(
 Row
 -----------------------------------------------------------------------
 
-### Datos para descarga: [Capa de infraestructura verde en el CBIMA](https://raw.githubusercontent.com/atlas-servicios-ecosistemicos-gam/datos/master/infraestructura-verde/cbima/IV_CBI_RIO_MARIA_AGUILAR.TIF)
+### Datos para descarga: [Capa geoespacial de infraestructura verde del Corredor Biológico Interurbano María Aguilar](https://raw.githubusercontent.com/atlas-servicios-ecosistemicos-gam/datos/master/infraestructura-verde/cbima/IV_CBI_RIO_MARIA_AGUILAR.TIF)
 ```{r}
 
 leaflet() %>%
